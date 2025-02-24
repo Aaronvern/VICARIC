@@ -1,0 +1,14 @@
+{
+  "pipeline": {
+    "dev": {
+      "cache": false
+    },
+    "build": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build"]
+    },
+    "start": {},
+    "prisma:generate": {},
+    "prisma:migrate": {}
+  }
+}
